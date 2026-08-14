@@ -11,28 +11,29 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f1f5f8;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6f8;
     color:#102b40;
 }
 
+/* HEADER */
 header{
+    height:78px;
     background:#061d30;
-    height:76px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     padding:0 6%;
     position:sticky;
     top:0;
-    z-index:1000;
+    z-index:100;
 }
 
 .logo{
-    color:white;
+    color:#fff;
     font-size:25px;
     font-weight:800;
     letter-spacing:1px;
@@ -42,47 +43,50 @@ header{
     color:#ff7900;
 }
 
-.call-btn{
+.call{
     background:#ff7900;
     color:white;
     text-decoration:none;
     padding:14px 20px;
     border-radius:12px;
     font-weight:bold;
-    font-size:15px;
 }
 
 /* HERO */
-
 .hero{
-    min-height:620px;
+    min-height:600px;
     padding:80px 7%;
     display:flex;
     align-items:center;
+
     background:
-    linear-gradient(120deg,rgba(3,27,45,.96),rgba(10,65,91,.85)),
-    url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1600&q=85");
+    linear-gradient(90deg,
+    rgba(3,25,42,.95),
+    rgba(3,25,42,.72),
+    rgba(3,25,42,.30)),
+    url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1800&q=90");
+
     background-size:cover;
     background-position:center;
 }
 
 .hero-content{
-    max-width:750px;
+    max-width:760px;
     color:white;
 }
 
-.small-title{
+.tag{
     color:#ff7900;
+    font-size:17px;
     font-weight:bold;
     letter-spacing:2px;
-    font-size:17px;
     margin-bottom:20px;
 }
 
 .hero h1{
     font-size:58px;
     line-height:1.05;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .hero h1 span{
@@ -90,93 +94,87 @@ header{
 }
 
 .hero h2{
-    font-size:28px;
     color:#ff7900;
-    margin-bottom:25px;
+    font-size:28px;
+    margin-bottom:22px;
 }
 
 .hero p{
     font-size:19px;
     line-height:1.7;
-    color:#e5edf2;
-    margin-bottom:32px;
+    color:#e7edf1;
+    max-width:700px;
+    margin-bottom:30px;
 }
 
 .buttons{
     display:flex;
-    gap:15px;
+    gap:14px;
     flex-wrap:wrap;
 }
 
 .btn{
+    text-decoration:none;
     padding:16px 28px;
     border-radius:10px;
-    text-decoration:none;
     font-weight:bold;
-    font-size:16px;
 }
 
-.primary{
+.orange{
     background:#ff7900;
     color:white;
 }
 
-.secondary{
+.outline{
     border:2px solid white;
     color:white;
 }
 
 /* SERVICES */
-
-.section{
+.services{
     padding:75px 6%;
 }
 
-.section-title{
+.title{
     text-align:center;
     font-size:40px;
-    margin-bottom:15px;
+    margin-bottom:12px;
 }
 
-.section-subtitle{
+.subtitle{
     text-align:center;
-    color:#687887;
-    font-size:18px;
+    color:#697985;
     max-width:700px;
-    margin:0 auto 50px;
+    margin:0 auto 45px;
+    font-size:18px;
     line-height:1.6;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:28px;
+.grid{
     max-width:1200px;
     margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
 }
 
 .card{
     background:white;
-    border-radius:25px;
+    border-radius:24px;
     overflow:hidden;
-    box-shadow:0 10px 35px rgba(0,0,0,.10);
+    box-shadow:0 8px 30px rgba(0,0,0,.10);
     border-top:6px solid #ff7900;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-6px);
 }
 
 .card img{
     width:100%;
     height:300px;
-    object-fit:cover;
     display:block;
+    object-fit:cover;
 }
 
 .card-content{
-    padding:28px;
+    padding:27px;
 }
 
 .card h3{
@@ -185,20 +183,19 @@ header{
 }
 
 .card p{
-    color:#687887;
+    color:#687783;
     font-size:17px;
     line-height:1.7;
 }
 
-/* FEATURE */
-
-.feature{
+/* INDUSTRIAL SECTION */
+.industrial{
     background:#071f32;
+    padding:75px 6%;
     color:white;
-    padding:80px 6%;
 }
 
-.feature-inner{
+.industrial-box{
     max-width:1200px;
     margin:auto;
     display:grid;
@@ -207,32 +204,33 @@ header{
     align-items:center;
 }
 
-.feature img{
+.industrial img{
     width:100%;
+    height:420px;
+    object-fit:cover;
     border-radius:20px;
 }
 
-.feature h2{
+.industrial h2{
     font-size:40px;
     margin-bottom:20px;
 }
 
-.feature h2 span{
+.industrial h2 span{
     color:#ff7900;
 }
 
-.feature p{
-    color:#d6e0e7;
-    line-height:1.8;
+.industrial p{
+    color:#d7e0e5;
     font-size:18px;
+    line-height:1.8;
 }
 
 /* CONTACT */
-
 .contact{
-    text-align:center;
-    padding:80px 6%;
     background:white;
+    text-align:center;
+    padding:75px 6%;
 }
 
 .contact h2{
@@ -241,28 +239,18 @@ header{
 }
 
 .contact p{
-    color:#687887;
+    color:#697985;
     font-size:18px;
-    margin-bottom:30px;
+    margin-bottom:28px;
 }
 
-.contact-buttons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.contact-buttons a{
+.contact a{
+    display:inline-block;
     padding:16px 30px;
+    margin:6px;
     border-radius:10px;
     text-decoration:none;
     font-weight:bold;
-}
-
-.whatsapp{
-    background:#20b954;
-    color:white;
 }
 
 .phone{
@@ -270,39 +258,42 @@ header{
     color:white;
 }
 
-/* FOOTER */
+.whatsapp{
+    background:#20b957;
+    color:white;
+}
 
+/* FOOTER */
 footer{
     background:#061d30;
-    color:#ccd7df;
+    color:#cbd5db;
     text-align:center;
     padding:30px 15px;
 }
 
-footer strong{
+footer span{
     color:#ff7900;
 }
 
 /* MOBILE */
-
 @media(max-width:800px){
 
     header{
         padding:0 18px;
-        height:68px;
+        height:70px;
     }
 
     .logo{
         font-size:20px;
     }
 
-    .call-btn{
+    .call{
         padding:11px 14px;
         font-size:13px;
     }
 
     .hero{
-        min-height:600px;
+        min-height:620px;
         padding:65px 25px;
     }
 
@@ -318,15 +309,15 @@ footer strong{
         font-size:17px;
     }
 
-    .section{
+    .services{
         padding:55px 18px;
     }
 
-    .section-title{
+    .title{
         font-size:32px;
     }
 
-    .cards{
+    .grid{
         grid-template-columns:1fr;
     }
 
@@ -338,16 +329,20 @@ footer strong{
         font-size:24px;
     }
 
-    .feature-inner{
+    .industrial-box{
         grid-template-columns:1fr;
     }
 
-    .feature h2{
+    .industrial img{
+        height:280px;
+    }
+
+    .industrial h2{
         font-size:32px;
     }
 
     .contact h2{
-        font-size:32px;
+        font-size:31px;
     }
 }
 </style>
@@ -356,14 +351,13 @@ footer strong{
 <body>
 
 <!-- HEADER -->
-
 <header>
 
     <div class="logo">
         <span>YADEX</span> AUTOMATION
     </div>
 
-    <a class="call-btn" href="tel:9601392912">
+    <a class="call" href="tel:9601392912">
         ☎ Call Now
     </a>
 
@@ -371,12 +365,11 @@ footer strong{
 
 
 <!-- HERO -->
-
 <section class="hero">
 
     <div class="hero-content">
 
-        <div class="small-title">
+        <div class="tag">
             ⚙ AUTOMATION & MACHINERY
         </div>
 
@@ -390,18 +383,18 @@ footer strong{
         </h2>
 
         <p>
-            Professional solutions for PLC, HMI, VFD,
-            Servo, Electrical Control Panels and Industrial
-            Machine Automation.
+            Reliable industrial automation solutions for
+            PLC, HMI, VFD, Servo, Electrical Control Panels,
+            Machine Automation and Industrial Machinery.
         </p>
 
         <div class="buttons">
 
-            <a class="btn primary" href="tel:9601392912">
+            <a class="btn orange" href="tel:9601392912">
                 ☎ Call Now
             </a>
 
-            <a class="btn secondary"
+            <a class="btn outline"
                href="https://wa.me/919601392912">
                 💬 WhatsApp Us
             </a>
@@ -414,29 +407,28 @@ footer strong{
 
 
 <!-- SERVICES -->
+<section class="services">
 
-<section class="section">
-
-    <h2 class="section-title">
+    <h2 class="title">
         Our Automation Services
     </h2>
 
-    <p class="section-subtitle">
-        Complete industrial automation and machinery
-        solutions designed for modern manufacturing.
+    <p class="subtitle">
+        Professional electrical and industrial automation
+        solutions for machines, production lines and
+        manufacturing systems.
     </p>
 
 
-    <div class="cards">
+    <div class="grid">
 
 
         <!-- CONTROL PANEL -->
-
         <div class="card">
 
             <img
-            src="images/panel-plc-1.jpg"
-            alt="Industrial Control Panel">
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=90"
+            alt="Industrial Electrical Control Panel">
 
             <div class="card-content">
 
@@ -445,9 +437,10 @@ footer strong{
                 </h3>
 
                 <p>
-                    Professional electrical control panels
-                    with organized wiring, relays, contactors,
-                    MCBs and industrial protection devices.
+                    Electrical control panels with organized
+                    wiring, relays, contactors, MCBs,
+                    protection devices and industrial
+                    control components.
                 </p>
 
             </div>
@@ -456,12 +449,11 @@ footer strong{
 
 
         <!-- PLC -->
-
         <div class="card">
 
             <img
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=85"
-            alt="PLC Drive Automation">
+            src="https://images.unsplash.com/photo-1565439371414-5f2b8f4f4a6b?auto=format&fit=crop&w=1400&q=90"
+            alt="PLC and Drive Automation">
 
             <div class="card-content">
 
@@ -470,9 +462,9 @@ footer strong{
                 </h3>
 
                 <p>
-                    PLC, HMI, VFD, servo drives,
-                    industrial control systems and
-                    machine automation solutions.
+                    PLC, HMI, VFD, servo drives, sensors
+                    and industrial control systems for
+                    automated machinery.
                 </p>
 
             </div>
@@ -480,12 +472,11 @@ footer strong{
         </div>
 
 
-        <!-- MACHINE -->
-
+        <!-- MACHINE AUTOMATION -->
         <div class="card">
 
             <img
-            src="https://images.unsplash.com/photo-1565439371414-5f2b8f4f4a6b?auto=format&fit=crop&w=1200&q=85"
+            src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1400&q=90"
             alt="Industrial Machine Automation">
 
             <div class="card-content">
@@ -495,9 +486,33 @@ footer strong{
                 </h3>
 
                 <p>
-                    Smart automation solutions for
-                    production machines, sensors,
-                    motors and industrial processes.
+                    Automation solutions for production
+                    machines, motors, sensors, control
+                    systems and industrial processes.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROBOTICS -->
+        <div class="card">
+
+            <img
+            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=90"
+            alt="Industrial Robot">
+
+            <div class="card-content">
+
+                <h3>
+                    Industrial Robotics
+                </h3>
+
+                <p>
+                    Robotic automation and machine handling
+                    solutions for modern manufacturing and
+                    production environments.
                 </p>
 
             </div>
@@ -506,11 +521,10 @@ footer strong{
 
 
         <!-- CONVEYOR -->
-
         <div class="card">
 
             <img
-            src="https://images.unsplash.com/photo-1586528116493-da8b7c2f9a1a?auto=format&fit=crop&w=1200&q=85"
+            src="https://images.unsplash.com/photo-1586528116493-da8b7c2f9a1a?auto=format&fit=crop&w=1400&q=90"
             alt="Industrial Conveyor System">
 
             <div class="card-content">
@@ -520,9 +534,9 @@ footer strong{
                 </h3>
 
                 <p>
-                    Industrial conveyor systems,
-                    material handling automation and
-                    customized machine solutions.
+                    Industrial conveyor systems and
+                    material-handling automation for
+                    manufacturing facilities.
                 </p>
 
             </div>
@@ -530,50 +544,23 @@ footer strong{
         </div>
 
 
-        <!-- AI INDUSTRIAL -->
-
+        <!-- SMART AUTOMATION -->
         <div class="card">
 
             <img
-            src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=85"
-            alt="AI Industrial Automation">
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=90"
+            alt="Smart Industrial Automation">
 
             <div class="card-content">
 
                 <h3>
-                    AI & Smart Automation
+                    Smart Industrial Automation
                 </h3>
 
                 <p>
-                    Modern AI-inspired industrial
-                    automation, smart monitoring,
-                    inspection and intelligent machine
-                    control solutions.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- ROBOTICS -->
-
-        <div class="card">
-
-            <img
-            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=85"
-            alt="Industrial Robotics">
-
-            <div class="card-content">
-
-                <h3>
-                    Industrial Robotics
-                </h3>
-
-                <p>
-                    Robotic automation, machine handling,
-                    production assistance and modern
-                    industrial robotics solutions.
+                    Modern monitoring, intelligent control,
+                    machine data and smart automation
+                    concepts for industry.
                 </p>
 
             </div>
@@ -585,31 +572,31 @@ footer strong{
 </section>
 
 
-<!-- FEATURE -->
+<!-- INDUSTRIAL FEATURE -->
+<section class="industrial">
 
-<section class="feature">
-
-    <div class="feature-inner">
+    <div class="industrial-box">
 
         <img
-        src="images/panel-plc-1.jpg"
-        alt="Yadex Industrial Control Panel">
+        src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1400&q=90"
+        alt="Industrial Machinery">
 
         <div>
 
             <h2>
-                Built for <span>Industrial Performance</span>
+                Engineering for
+                <span>Industrial Performance</span>
             </h2>
 
             <p>
-                Yadex Automation provides reliable
-                electrical and automation solutions
-                for industrial machinery.
+                Yadex Automation & Machinery focuses on
+                practical and reliable automation solutions
+                for industrial machines and manufacturing
+                systems.
 
-                From control panels and PLC systems
-                to drives, sensors and machine automation,
-                our focus is on reliable operation,
-                productivity and long-term performance.
+                Our services cover electrical panels,
+                PLC programming, drives, machine control,
+                sensors and automation integration.
             </p>
 
         </div>
@@ -620,7 +607,6 @@ footer strong{
 
 
 <!-- CONTACT -->
-
 <section class="contact">
 
     <h2>
@@ -628,32 +614,27 @@ footer strong{
     </h2>
 
     <p>
-        Contact Yadex Automation for industrial
-        automation and machinery solutions.
+        Need an industrial automation or control panel
+        solution? Get in touch with us.
     </p>
 
-    <div class="contact-buttons">
+    <a class="phone" href="tel:9601392912">
+        ☎ 9601392912
+    </a>
 
-        <a class="phone"
-           href="tel:9601392912">
-            ☎ 9601392912
-        </a>
-
-        <a class="whatsapp"
-           href="https://wa.me/919601392912">
-            💬 WhatsApp
-        </a>
-
-    </div>
+    <a class="whatsapp"
+       href="https://wa.me/919601392912">
+        💬 WhatsApp
+    </a>
 
 </section>
 
 
 <!-- FOOTER -->
-
 <footer>
 
-    © 2026 <strong>Yadex Automation & Machinery</strong>
+    © 2026
+    <span>Yadex Automation & Machinery</span>
     <br>
     Industrial Automation Solutions
 

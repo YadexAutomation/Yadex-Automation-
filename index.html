@@ -4,10 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>YADEX Automation & Machinery</title>
-
-<meta name="description"
-content="YADEX Automation & Machinery - Industrial Automation, PLC, HMI, VFD, Servo and Electrical Control Panel Solutions.">
+<title>Yadex Automation & Machinery</title>
 
 <style>
 
@@ -17,318 +14,164 @@ content="YADEX Automation & Machinery - Industrial Automation, PLC, HMI, VFD, Se
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7fa;
-    color:#102b40;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6f8;
+    color:#102c40;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
     background:#061b2d;
-    color:white;
-    padding:16px 7%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    padding:18px 6%;
     position:sticky;
     top:0;
-    z-index:100;
-    box-shadow:0 4px 20px rgba(0,0,0,.2);
+    z-index:1000;
 }
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
-.logo-icon{
-    width:42px;
-    height:42px;
-    border:3px solid #ff7900;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-}
-
-.logo-text{
-    font-size:25px;
+    color:white;
+    font-size:27px;
     font-weight:800;
-    letter-spacing:.5px;
+    letter-spacing:1px;
 }
 
-.logo-text span{
+.logo span{
     color:#ff7900;
 }
 
-.header-tag{
-    font-size:12px;
-    color:#cbd6de;
-    letter-spacing:1.5px;
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-/* ================= HERO ================= */
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.call-btn{
+    background:#ff7900;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HERO */
 
 .hero{
+    min-height:650px;
+    padding:90px 6%;
+    display:flex;
+    align-items:center;
+
     background:
     linear-gradient(
-        110deg,
-        #061b2d 0%,
-        #0a3048 55%,
-        #102f43 100%
-    );
+        90deg,
+        rgba(4,25,41,.97),
+        rgba(7,48,70,.80),
+        rgba(7,48,70,.45)
+    ),
+    url("images/panel-plc-1.jpg");
 
-    color:white;
-    padding:70px 7%;
+    background-size:cover;
+    background-position:center;
 }
 
-.hero-container{
-    max-width:1200px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:
-    1.05fr .95fr;
-
-    gap:50px;
-    align-items:center;
+.hero-content{
+    max-width:750px;
 }
 
-/* LEFT */
-
-.hero-content small{
+.small-title{
     color:#ff7900;
+    font-size:20px;
     font-weight:bold;
     letter-spacing:2px;
-    font-size:14px;
+    margin-bottom:20px;
 }
 
-.hero-content h1{
-    font-size:clamp(42px,6vw,70px);
-    line-height:1.02;
-    margin:18px 0;
+.hero h1{
+    color:white;
+    font-size:65px;
+    line-height:1.05;
+    margin-bottom:20px;
 }
 
-.hero-content h1 span{
+.hero h2{
     color:#ff7900;
+    font-size:38px;
+    margin-bottom:20px;
 }
 
-.hero-content h2{
-    font-size:30px;
-    color:#ff8a16;
-    margin-bottom:18px;
+.hero p{
+    color:#e9f1f5;
+    font-size:19px;
+    line-height:1.7;
+    margin-bottom:30px;
 }
-
-.hero-content p{
-    font-size:18px;
-    line-height:1.8;
-    color:#dce7ee;
-    max-width:650px;
-}
-
-/* BUTTONS */
 
 .buttons{
     display:flex;
     gap:15px;
     flex-wrap:wrap;
-    margin-top:30px;
 }
 
 .btn{
+    padding:16px 25px;
+    border-radius:10px;
     text-decoration:none;
-    padding:15px 24px;
-    border-radius:9px;
     font-weight:bold;
-    transition:.25s;
+    font-size:17px;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.call{
+.orange{
     background:#ff7900;
     color:white;
 }
 
-.whatsapp{
+.outline{
     border:2px solid white;
     color:white;
 }
 
-/* INDUSTRIAL IMAGE */
-
-.hero-image{
-    position:relative;
-}
-
-.hero-image img{
-    width:100%;
-    height:430px;
-    object-fit:cover;
-
-    border-radius:20px;
-
-    border:4px solid rgba(255,255,255,.15);
-
-    box-shadow:
-    0 25px 60px rgba(0,0,0,.45);
-}
-
-.image-label{
-    position:absolute;
-    left:20px;
-    bottom:20px;
-
-    background:rgba(6,27,45,.92);
-    color:white;
-
-    padding:15px 20px;
-    border-left:4px solid #ff7900;
-
-    border-radius:8px;
-}
-
-.image-label strong{
-    display:block;
-    color:#ff7900;
-    font-size:18px;
-}
-
-.image-label span{
-    font-size:13px;
-    color:#d6e0e6;
-}
-
-/* ================= TRUST BAR ================= */
-
-.trust{
-    background:white;
-    padding:25px 7%;
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
-}
-
-.trust-container{
-    max-width:1100px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:
-    repeat(4,1fr);
-
-    gap:20px;
-    text-align:center;
-}
-
-.trust-item{
-    border-right:1px solid #ddd;
-}
-
-.trust-item:last-child{
-    border:none;
-}
-
-.trust-item strong{
-    display:block;
-    font-size:18px;
-}
-
-.trust-item span{
-    color:#758592;
-    font-size:13px;
-}
-
-/* ================= SECTIONS ================= */
+/* SECTION */
 
 section{
-    padding:70px 7%;
+    padding:80px 6%;
 }
 
 .section-title{
     text-align:center;
-    font-size:36px;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#09263d;
     margin-bottom:12px;
 }
 
-.section-title span{
-    color:#ff7900;
+.section-title p{
+    color:#687887;
+    font-size:18px;
 }
 
-.section-subtitle{
-    text-align:center;
-    color:#687984;
-    max-width:750px;
-    margin:0 auto 40px;
-    font-size:17px;
-}
-
-/* ================= SERVICES ================= */
+/* SERVICES */
 
 .services{
-    max-width:1100px;
-    margin:auto;
-
     display:grid;
-    grid-template-columns:
-    repeat(4,1fr);
-
-    gap:20px;
-}
-
-.service{
-    background:white;
-    padding:28px 22px;
-    border-radius:15px;
-
-    border-top:4px solid #ff7900;
-
-    box-shadow:
-    0 10px 30px rgba(16,45,65,.08);
-
-    transition:.25s;
-}
-
-.service:hover{
-    transform:translateY(-6px);
-}
-
-.service-icon{
-    font-size:35px;
-    margin-bottom:15px;
-}
-
-.service h3{
-    margin-bottom:10px;
-}
-
-.service p{
-    color:#6b7b85;
-    font-size:14px;
-}
-
-/* ================= PROJECTS ================= */
-
-.projects{
-    background:#eaf0f4;
-}
-
-.gallery{
-    max-width:1150px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:
-    repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:25px;
 }
 
@@ -336,144 +179,307 @@ section{
     background:white;
     border-radius:18px;
     overflow:hidden;
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.1);
-
-    transition:.25s;
-}
-
-.card:hover{
-    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+    border-top:5px solid #ff7900;
 }
 
 .card img{
     width:100%;
-    height:250px;
+    height:260px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card h3{
+    font-size:25px;
+    margin-bottom:10px;
+    color:#09263d;
+}
+
+.card p{
+    color:#687887;
+    font-size:16px;
+    line-height:1.6;
+}
+
+/* INDUSTRIAL */
+
+.industrial{
+    background:#f3f6f8;
+}
+
+.machine{
+    background:white;
+    display:grid;
+    grid-template-columns:1.15fr 1fr;
+    margin-bottom:40px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
+
+.machine img{
+    width:100%;
+    height:100%;
+    min-height:350px;
     object-fit:cover;
 }
 
-.card-body{
-    padding:20px;
+.machine-text{
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
-.card-body h3{
-    font-size:20px;
-    margin-bottom:8px;
+.machine-text small{
+    color:#ff7900;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
-.card-body p{
-    color:#6c7c86;
-}
-
-/* ================= CTA ================= */
-
-.cta{
-    max-width:1100px;
-    margin:auto;
-
-    background:
-    linear-gradient(110deg,#061b2d,#123d59);
-
-    color:white;
-
-    padding:55px 30px;
-    border-radius:22px;
-
-    text-align:center;
-}
-
-.cta h2{
+.machine-text h3{
     font-size:34px;
-    margin-bottom:12px;
+    margin:12px 0;
+    color:#09263d;
 }
 
-.cta p{
-    color:#dce7ee;
+.machine-text p{
+    color:#687887;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* AI SECTION */
+
+.ai-section{
+    background:linear-gradient(135deg,#061b2d,#12435e);
+}
+
+.ai-section h2{
+    color:white;
+}
+
+.ai-section p{
+    color:#d8e4eb;
+}
+
+.ai-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.ai-card{
+    height:320px;
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.ai-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.ai-card:after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:55%;
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+}
+
+.ai-card h3{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    color:white;
+    z-index:2;
+    font-size:23px;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+.about h2{
+    font-size:42px;
+    color:#09263d;
     margin-bottom:20px;
 }
 
-/* ================= FOOTER ================= */
-
-footer{
-    background:#061b2d;
-    color:#c9d4dc;
-    text-align:center;
-    padding:30px 20px;
+.about p{
+    color:#687887;
+    font-size:18px;
+    line-height:1.7;
 }
 
-footer strong{
+.points{
+    margin-top:20px;
+}
+
+.points div{
+    margin:12px 0;
+    font-weight:bold;
+}
+
+.points span{
     color:#ff7900;
 }
 
-/* ================= MOBILE ================= */
+/* CTA */
+
+.cta{
+    background:#ff7900;
+    text-align:center;
+    color:white;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.cta a{
+    display:inline-block;
+    background:#061b2d;
+    color:white;
+    padding:15px 30px;
+    border-radius:9px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:#041523;
+    color:#b9c7cf;
+    padding:50px 6% 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+footer h3{
+    color:white;
+    margin-bottom:15px;
+}
+
+footer a{
+    color:#b9c7cf;
+    display:block;
+    text-decoration:none;
+    margin:8px 0;
+}
+
+.copyright{
+    border-top:1px solid #29404f;
+    margin-top:35px;
+    padding-top:20px;
+    text-align:center;
+}
+
+/* MOBILE */
 
 @media(max-width:900px){
 
-    .hero-container{
+    nav ul{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .services,
+    .ai-grid{
         grid-template-columns:1fr;
     }
 
-    .hero-image{
-        order:-1;
+    .machine{
+        grid-template-columns:1fr;
     }
 
-    .hero-image img{
-        height:320px;
+    .machine img{
+        height:300px;
     }
 
-    .services{
-        grid-template-columns:
-        repeat(2,1fr);
+    .about{
+        grid-template-columns:1fr;
     }
 
-    .gallery{
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-
-    .trust-container{
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-
-    .trust-item:nth-child(2){
-        border:none;
+    .footer-grid{
+        grid-template-columns:1fr;
     }
 }
 
 @media(max-width:600px){
 
     header{
-        padding:14px 5%;
+        padding:16px 5%;
     }
 
-    .logo-text{
-        font-size:20px;
+    .logo{
+        font-size:21px;
     }
 
-    .header-tag{
-        display:none;
+    .call-btn{
+        padding:9px 12px;
+        font-size:13px;
     }
 
     .hero{
-        padding:45px 6%;
+        min-height:680px;
+        padding:70px 5%;
     }
 
-    .hero-image img{
-        height:280px;
+    .hero h1{
+        font-size:44px;
     }
 
-    .hero-content h1{
-        font-size:43px;
+    .hero h2{
+        font-size:27px;
     }
 
-    .hero-content h2{
-        font-size:25px;
-    }
-
-    .hero-content p{
-        font-size:16px;
+    .hero p{
+        font-size:17px;
     }
 
     .buttons{
@@ -484,25 +490,30 @@ footer strong{
         text-align:center;
     }
 
-    .services{
-        grid-template-columns:1fr;
-    }
-
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
-    .trust-container{
-        grid-template-columns:1fr 1fr;
-    }
-
     section{
-        padding:50px 6%;
+        padding:60px 5%;
     }
 
-    .section-title{
-        font-size:30px;
+    .section-title h2{
+        font-size:32px;
     }
+
+    .machine-text{
+        padding:28px;
+    }
+
+    .machine-text h3{
+        font-size:28px;
+    }
+
+    .about h2{
+        font-size:32px;
+    }
+
+    .about img{
+        height:300px;
+    }
+
 }
 
 </style>
@@ -511,222 +522,160 @@ footer strong{
 <body>
 
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header>
 
-    <div class="logo">
+<nav>
 
-        <div class="logo-icon">
-            ⚙
-        </div>
+<div class="logo">
+<span>YADEX</span> AUTOMATION
+</div>
 
-        <div class="logo-text">
-            <span>YADEX</span> AUTOMATION
-        </div>
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#industrial">Industrial</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-    </div>
+<a class="call-btn" href="tel:9601392912">
+☎ Call Now
+</a>
 
-    <div class="header-tag">
-        AUTOMATION & MACHINERY
-    </div>
+</nav>
 
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <section class="hero">
 
-<div class="hero-container">
+<div class="hero-content">
 
+<div class="small-title">
+AUTOMATION & MACHINERY
+</div>
 
-    <div class="hero-content">
+<h1>
+Yadex Automation & Machinery
+</h1>
 
-        <small>
-            INDUSTRIAL AUTOMATION & MACHINERY
-        </small>
+<h2>
+Industrial Automation Solutions
+</h2>
 
-        <h1>
-            YADEX <span>Automation</span>
-            & Machinery
-        </h1>
+<p>
+We provide expert solutions in PLC, HMI, VFD, Servo,
+Electrical Panel and Industrial Automation to improve
+efficiency, productivity and reliability.
+</p>
 
-        <h2>
-            Industrial Automation Solutions
-        </h2>
+<div class="buttons">
 
-        <p>
-            We provide professional industrial
-            automation solutions including PLC,
-            HMI, VFD, Servo, Electrical Control
-            Panels and complete machine automation.
-        </p>
+<a class="btn orange"
+href="tel:9601392912">
+☎ Call Now: 9601392912
+</a>
 
+<a class="btn outline"
+href="https://wa.me/919601392912">
+💬 WhatsApp Us
+</a>
 
-        <div class="buttons">
-
-            <a
-            class="btn call"
-            href="tel:+919601392912">
-
-                ☎ Call Now: 9601392912
-
-            </a>
-
-
-            <a
-            class="btn whatsapp"
-            href="https://wa.me/919601392912">
-
-                💬 WhatsApp Us
-
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- INDUSTRIAL IMAGE -->
-
-    <div class="hero-image">
-
-        <img
-        src="images/panel-plc-1.jpg"
-        alt="YADEX Industrial Control Panel">
-
-        <div class="image-label">
-
-            <strong>
-                INDUSTRIAL CONTROL PANEL
-            </strong>
-
-            <span>
-                PLC • VFD • HMI • Electrical Automation
-            </span>
-
-        </div>
-
-    </div>
-
+</div>
 
 </div>
 
 </section>
 
 
-<!-- ================= TRUST ================= -->
+<!-- SERVICES -->
 
-<div class="trust">
+<section id="services">
 
-<div class="trust-container">
+<div class="section-title">
 
-    <div class="trust-item">
-        <strong>PLC</strong>
-        <span>Programming & Control</span>
-    </div>
-
-    <div class="trust-item">
-        <strong>HMI</strong>
-        <span>Operator Interface</span>
-    </div>
-
-    <div class="trust-item">
-        <strong>VFD & Servo</strong>
-        <span>Motion & Drive Control</span>
-    </div>
-
-    <div class="trust-item">
-        <strong>Control Panels</strong>
-        <span>Industrial Electrical</span>
-    </div>
-
-</div>
-
-</div>
-
-
-<!-- ================= SERVICES ================= -->
-
-<section>
-
-<h2 class="section-title">
-    Our <span>Automation Services</span>
+<h2>
+Our Automation Services
 </h2>
 
-<p class="section-subtitle">
-    Complete industrial automation and machine
-    control solutions designed for reliable,
-    efficient and professional operation.
+<p>
+Reliable industrial automation and control solutions
+designed for real-world machinery.
 </p>
+
+</div>
 
 
 <div class="services">
 
 
-    <div class="service">
+<div class="card">
 
-        <div class="service-icon">⚙️</div>
+<img src="images/panel-plc-1.jpg"
+alt="Industrial Control Panel">
 
-        <h3>
-            PLC & HMI
-        </h3>
+<div class="card-content">
 
-        <p>
-            PLC programming, HMI development,
-            troubleshooting and machine control.
-        </p>
+<h3>
+Industrial Control Panel
+</h3>
 
-    </div>
+<p>
+Organized control wiring, relays, contactors,
+MCBs and protection devices for industrial machines.
+</p>
 
+</div>
 
-    <div class="service">
-
-        <div class="service-icon">⚡</div>
-
-        <h3>
-            VFD & Servo
-        </h3>
-
-        <p>
-            Drive installation, configuration,
-            commissioning and motion control.
-        </p>
-
-    </div>
+</div>
 
 
-    <div class="service">
+<div class="card">
 
-        <div class="service-icon">🔧</div>
+<img src="images/panel-plc-2.jpg"
+alt="PLC Drive Automation"
+onerror="this.src='images/panel-plc-1.jpg'">
 
-        <h3>
-            Control Panels
-        </h3>
+<div class="card-content">
 
-        <p>
-            Industrial electrical control panels
-            with neat and organized wiring.
-        </p>
+<h3>
+PLC & Drive Automation
+</h3>
 
-    </div>
+<p>
+PLC, HMI, VFD, servo drives, power supply
+and field wiring solutions.
+</p>
+
+</div>
+
+</div>
 
 
-    <div class="service">
+<div class="card">
 
-        <div class="service-icon">🏭</div>
+<img src="images/machine-automation.jpg"
+alt="Machine Automation"
+onerror="this.src='images/panel-plc-1.jpg'">
 
-        <h3>
-            Machine Automation
-        </h3>
+<div class="card-content">
 
-        <p>
-            Complete automation solutions for
-            machines and industrial applications.
-        </p>
+<h3>
+Machine Automation
+</h3>
 
-    </div>
+<p>
+Complete machine automation, control,
+monitoring and troubleshooting solutions.
+</p>
+
+</div>
+
+</div>
 
 
 </div>
@@ -734,148 +683,337 @@ footer strong{
 </section>
 
 
-<!-- ================= PROJECTS ================= -->
+<!-- INDUSTRIAL MACHINERY -->
 
-<section class="projects">
+<section id="industrial">
 
-<h2 class="section-title">
-    Industrial <span>Projects</span>
+<div class="section-title">
+
+<h2>
+Industrial Automation & Machinery
 </h2>
 
-<p class="section-subtitle">
-    Our industrial control panels and machine
-    automation work.
+<p>
+Modern industrial equipment and automation solutions
+for production environments.
+</p>
+
+</div>
+
+
+<!-- MACHINE 1 -->
+
+<div class="machine">
+
+<div>
+<img src="images/component-washing.jpg"
+alt="Component Washing Machine"
+onerror="this.src='images/panel-plc-1.jpg'">
+</div>
+
+<div class="machine-text">
+
+<small>
+INDUSTRIAL MACHINERY
+</small>
+
+<h3>
+Component Washing & Cleaning Systems
+</h3>
+
+<p>
+Automated component washing and cleaning systems
+designed for efficient and reliable industrial production.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- MACHINE 2 -->
+
+<div class="machine">
+
+<div>
+<img src="images/testing-inspection.jpg"
+alt="Testing Inspection Machine"
+onerror="this.src='images/panel-plc-1.jpg'">
+</div>
+
+<div class="machine-text">
+
+<small>
+QUALITY AUTOMATION
+</small>
+
+<h3>
+Testing, Inspection & Traceability
+</h3>
+
+<p>
+Smart testing, inspection, vision and traceability
+solutions for modern manufacturing lines.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- MACHINE 3 -->
+
+<div class="machine">
+
+<div>
+<img src="images/conveyor.jpg"
+alt="Conveyor Material Handling"
+onerror="this.src='images/panel-plc-1.jpg'">
+</div>
+
+<div class="machine-text">
+
+<small>
+MATERIAL HANDLING
+</small>
+
+<h3>
+Conveyors & Material Handling Solutions
+</h3>
+
+<p>
+Industrial conveyor systems and automated material
+handling solutions for production lines.
+</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<!-- AI INDUSTRIAL -->
+
+<section id="solutions" class="ai-section">
+
+<div class="section-title">
+
+<h2>
+Smart Industrial Solutions
+</h2>
+
+<p>
+AI-inspired industrial machinery and Industry 4.0
+automation concepts.
+</p>
+
+</div>
+
+
+<div class="ai-grid">
+
+
+<div class="ai-card">
+
+<img src="images/ai-machine-1.jpg"
+alt="Smart Industrial Machine"
+onerror="this.src='images/panel-plc-1.jpg'">
+
+<h3>
+Smart Machine Automation
+</h3>
+
+</div>
+
+
+<div class="ai-card">
+
+<img src="images/ai-machine-2.jpg"
+alt="Robotics Automation"
+onerror="this.src='images/panel-plc-1.jpg'">
+
+<h3>
+Robotics & Production Automation
+</h3>
+
+</div>
+
+
+<div class="ai-card">
+
+<img src="images/ai-machine-3.jpg"
+alt="Smart Factory"
+onerror="this.src='images/panel-plc-1.jpg'">
+
+<h3>
+Smart Factory & Industry 4.0
+</h3>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="about">
+
+
+<div>
+
+<img src="images/panel-plc-1.jpg"
+alt="Yadex Industrial Control Panel">
+
+</div>
+
+
+<div>
+
+<div class="small-title">
+WHY YADEX AUTOMATION
+</div>
+
+<h2>
+Engineering built for real industrial machines.
+</h2>
+
+<p>
+We focus on practical, reliable and service-friendly
+automation systems that help industries improve machine
+performance and production efficiency.
 </p>
 
 
-<div class="gallery">
+<div class="points">
 
+<div>
+<span>✓</span>
+PLC / HMI / VFD / Servo Automation
+</div>
 
-    <div class="card">
+<div>
+<span>✓</span>
+Electrical Control Panel Design
+</div>
 
-        <img
-        src="images/panel-plc-1.jpg"
-        alt="Industrial PLC Control Panel">
+<div>
+<span>✓</span>
+Machine Automation & Troubleshooting
+</div>
 
-        <div class="card-body">
+<div>
+<span>✓</span>
+Industrial Control & Field Wiring
+</div>
 
-            <h3>
-                Industrial Control Panel
-            </h3>
+</div>
 
-            <p>
-                Organized control wiring,
-                relays, contactors and protection devices.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="card">
-
-        <img
-        src="images/panel-automation-2.jpg"
-        alt="Industrial Automation Panel">
-
-        <div class="card-body">
-
-            <h3>
-                PLC & Drive Automation
-            </h3>
-
-            <p>
-                PLC, VFD, power supply and
-                industrial field wiring.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="card">
-
-        <img
-        src="images/panel-vfd-hmi-3.jpg"
-        alt="VFD HMI Control Panel">
-
-        <div class="card-body">
-
-            <h3>
-                VFD & HMI Panel
-            </h3>
-
-            <p>
-                Professional machine control
-                and drive automation solution.
-            </p>
-
-        </div>
-
-    </div>
-
+</div>
 
 </div>
 
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT CTA -->
 
-<section>
+<section id="contact" class="cta">
 
-<div class="cta">
+<h2>
+Let's Automate Your Machine
+</h2>
 
-    <h2>
-        Let's Automate Your Machine
-    </h2>
+<p>
+Talk to Yadex Automation & Machinery
+for your next industrial automation project.
+</p>
 
-    <p>
-        Contact YADEX Automation & Machinery
-        for industrial automation requirements.
-    </p>
-
-    <div class="buttons"
-    style="justify-content:center;">
-
-        <a
-        class="btn call"
-        href="tel:+919601392912">
-
-            ☎ Call Now
-
-        </a>
-
-        <a
-        class="btn whatsapp"
-        href="https://wa.me/919601392912">
-
-            💬 WhatsApp
-
-        </a>
-
-    </div>
-
-</div>
+<a href="tel:9601392912">
+☎ Call 9601392912
+</a>
 
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 
 <footer>
 
-    <strong>YADEX AUTOMATION & MACHINERY</strong>
+<div class="footer-grid">
 
-    <br>
 
-    Industrial Automation • PLC • HMI • VFD • Servo • Control Panels
+<div>
 
-    <br><br>
+<div class="logo">
+<span>YADEX</span> AUTOMATION
+</div>
 
-    © 2026 YADEX Automation & Machinery
+<p style="margin-top:15px;">
+Industrial Automation & Machinery solutions
+for modern manufacturing.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Services
+</h3>
+
+<a href="#services">
+PLC Automation
+</a>
+
+<a href="#services">
+Control Panels
+</a>
+
+<a href="#solutions">
+Machine Automation
+</a>
+
+<a href="#solutions">
+Industry 4.0
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Contact
+</h3>
+
+<a href="tel:9601392912">
+☎ 9601392912
+</a>
+
+<a href="https://wa.me/919601392912">
+💬 WhatsApp
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Yadex Automation & Machinery.
+All Rights Reserved.
+
+</div>
 
 </footer>
 
